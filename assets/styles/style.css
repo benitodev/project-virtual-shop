@@ -1,0 +1,416 @@
+:root {
+  --font-size: 25px;
+  --color-a: rgb(29, 28, 31);
+}
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+a {
+  color: rgb(76, 7, 133);
+  transition: color 0.3 ease;
+}
+
+a:hover {
+  color: rgb(118, 30, 190);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+/********** Nav-general  *************/
+#nav-logo {
+  margin-right: 20px;
+  flex-shrink: 0;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  min-height: 3.25rem;
+}
+
+/*** logo  ***/
+
+#nav-bar-logo {
+  width: 108px;
+}
+
+#nav-menu-utilities {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#nav-bar-logo img {
+  width: 100%;
+  height: 80px;
+}
+/*** nav  ***/
+#nav {
+  padding: 0 10%;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 28%);
+}
+
+#nav-menu {
+  height: 100%;
+  width: 100%;
+}
+
+#nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0 0 20px 0;
+  align-items: center;
+}
+
+#nav ul li {
+  margin: 0px 30px 0px 0vw;
+  font-size: 22px;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 200;
+  color: #242220;
+}
+
+#nav ul li:hover {
+  color: #fb9f0bb9;
+}
+
+.utilities-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 120px;
+}
+.utilities-buttons a img {
+  margin: 4px 10px;
+  width: 45px;
+  height: 45px;
+}
+
+.utilities-additions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.utilities-additions img {
+  width: 50px;
+  height: 50px;
+}
+
+.utilities-contact {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.utilities-contact h4 {
+  display: inline;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+/**********  library to make dropdown menus  *************/
+.pushbar-nav.opened {
+  margin: 0px 0px;
+}
+
+#pushbar-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(40px, 400px));
+
+  justify-content: space-between;
+  justify-items: center;
+  width: 100%;
+  padding: 0 20%;
+}
+
+#pushbar-content a {
+  text-decoration: none;
+}
+
+#pushbar-content img {
+  width: 70px;
+  height: 60.2px;
+}
+
+#show-all {
+  margin-bottom: 22px;
+  align-items: center;
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+#show-all a {
+  color: rgb(29, 28, 31);
+  box-shadow: 0 2px 4px 0 #d6d6d6;
+  min-width: 144px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/**********  Main image (banners) page: default  *************/
+#main-image {
+  margin: 2px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#main-image img {
+  width: 100%;
+}
+
+.main-content {
+  padding: 40px 10%;
+}
+
+.main-content-box {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+}
+
+.box {
+  padding: 0.75rem;
+}
+
+.box-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+
+  border: 2.1px solid #e1e1e1;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 7%);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/*****  Form  *******/
+
+form {
+  background-color: rgba(255, 245, 238, 0);
+  display: flex;
+  justify-content: center;
+}
+
+/************************  FORM page: contact.php  ***************************/
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  margin: 2rem;
+  box-shadow: 1px 1px 7px black;
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.input {
+  border: 1px solid rgb(224, 219, 219);
+  outline: none;
+  margin: 0.5rem;
+  align-self: center;
+  text-align: center;
+  width: 50%;
+}
+
+label {
+  font-family: "Georama", sans-serif;
+  text-align: center;
+  margin: 0.5rem;
+  display: block;
+}
+
+.h2-form {
+  margin: 2.5rem;
+  font-family: "Georama", sans-serif;
+}
+
+/******* Buttons-user PAGE:profile *********/
+.buttons-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buttons-user a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 20px 0;
+
+  height: 60px;
+  width: 450px;
+  background-color: rgb(7, 7, 7);
+  color: rgb(243, 243, 243);
+}
+
+/************  Menu-Products! Page: menu.php     **********************/
+
+/***  menu-categories!***/
+.menu {
+  padding: 30px 10%;
+}
+
+.menu-container {
+  display: flex;
+}
+
+.contain-categories {
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 7%);
+  border: 0.5px solid #e1e1e1;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 275px;
+}
+
+.title-categories a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0 12px 0 6px;
+  width: 275px;
+  height: 80px;
+  font-size: 18px;
+  align-items: center;
+  color: var(--color-a);
+  text-decoration: none;
+}
+.categories-menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 7%);
+  border: 2px solid #e1e1e1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.categories-menu-imgs {
+  width: 75px;
+  height: auto;
+  max-height: 100%;
+  margin-left: 6px;
+  margin-right: 12px;
+}
+/***  menu-products!***/
+.menu-products {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+.menu-products-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  color: var(--color-a);
+  text-decoration: none;
+}
+
+.product div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  display: block;
+  height: auto;
+  width: 300px;
+  height: 250px;
+}
+
+/************  Menu-Products! Page: manage.php     **********************/
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  grid-gap: 10px 10px;
+}
+.product-manage {
+  border: 2px solid rgb(118, 30, 190);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.text-content-manage {
+  min-width: 400px;
+}
+/******* Customizations *********/
+
+/***** Register and login comprobation  ******/
+
+.failed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px 0px rgb(118, 30, 190);
+}
+
+.failed h2 {
+  background-color: rgb(209, 14, 14);
+}
+
+.good {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px 0px rgb(118, 30, 190);
+}
+
+.good h2 {
+  background-color: rgba(0, 128, 0, 0.685);
+}
