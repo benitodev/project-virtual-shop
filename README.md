@@ -37,7 +37,7 @@ The page is incomplete, since they haven't been programmed functionalities such 
 **menu page**
 ![Imagen inicio](ignore/menu-page.PNG)
 **pushbar, example**
-![Imagen inicio](ignore/pushbar-page.PNG)
+![Imagen inicio](ignore/pushbar-menu.PNG)
 **create and login page**
 ![Imagen inicio](ignore/create-login-page.PNG)
 **if is admin, will be shown options**
